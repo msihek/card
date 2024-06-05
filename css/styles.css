@@ -147,14 +147,6 @@ body {
 }
 
 .spotifyplayer {
-  width: 320px;
-  height: 105px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
   background-color: #242424;
   overflow: hidden;
   position: relative;

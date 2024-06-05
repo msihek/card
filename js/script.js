@@ -76,11 +76,11 @@ function createRandomCircles(rectangleElement) {
 }
 
 const rectangleElement = document.querySelector(".rectangle");
-const spotifyPlayerElement = document.querySelector(".spotifyplayer");
+
 const rectangle2Element = document.querySelector(".rectangle-right");
 
 createRandomCircles(rectangleElement);
-createRandomCircles(spotifyPlayerElement);
+
 createRandomCircles(rectangle2Element);
 
 document.addEventListener("DOMContentLoaded", function () {

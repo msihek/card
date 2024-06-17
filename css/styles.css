@@ -338,7 +338,7 @@ body {
   width: 50px;
   position: absolute;
   top: 160px;
-  left: -75px;
+  left: 10px;
   transform: skewX(-45deg);
 }
 .shine-button:hover {

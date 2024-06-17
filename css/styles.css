@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
-
+@import url('https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ body {
 }
 
 .nickname {
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik One", sans-serif;
     color: white;
 	margin: 0;
 	margin-bottom: -10px;

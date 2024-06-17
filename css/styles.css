@@ -294,7 +294,7 @@ body {
     color: white;
     font-size: 16px;
     position: absolute;
-    top: 150px;
+    top: 130px;
     left: 10px;
     margin: 0;
     padding: 25px;
@@ -321,7 +321,7 @@ body {
 .shine-button {
   text-decoration: none;
   display: inline-block;
-  padding: 100px 300px;
+  padding: 10px 30px;
   margin: 10px 20px;
   position: relative;
   overflow: hidden;
@@ -337,7 +337,7 @@ body {
   height: 50px;
   width: 50px;
   position: absolute;
-  top: -8px;
+  top: 160px;
   left: -75px;
   transform: skewX(-45deg);
 }

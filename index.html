@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+    -------------------
+    Dach Website
+    -------------------
+    1. to add backgrounds, go to 'script.js' and add your file name to line 86.
+    2. to add music, go to 'script.js' and add your file name to line 232.
+    3. to change the time info, go to 'script.js', and go to line 459.
+    4. to change the discord embed, go to line 25 in 'index.html'.
+    5. to add more description lines, go to 'script.js' and add your lines to line 44.
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animated scrolling title - controlled by JavaScript -->
+    <title>Welcome to my bio! </title>
+    <!-- Browser tab icon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="BIO msihek" />
+    <meta property="og:url" content="https://cheatin.fun/" />
+    <meta property="og:image" content="https://cheatin.fun/favicon.png" />
+</head>
+
+<body>
+    <!-- ========== START SCREEN ========== -->
+    <!-- Initial landing screen with "Click anywhere to enter" -->
+    <div id="startScreen" class="start-screen">
+        <div class="start-text" id="startText"></div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <!-- Hidden initially, shown after clicking start screen -->
+    <div id="mainContent" class="main-content hidden">
+
+        <!-- ========== BACKGROUND CONTAINER ========== -->
+        <!-- Handles video/image backgrounds -->
+        <div class="background-container">
+            <video id="bgVideo" class="background-media" muted loop>
+                <source src="" type="video/mp4">
+            </video>
+            <!-- Background image - controlled by theme selector -->
+            <img id="bgImage" class="background-media" src="" alt="">
+        </div>
+
+        <!-- ========== BIO CARD ========== -->
+        <!-- Main profile card with user info -->
+        <div class="bio-card">
+            <!-- ========== VISIT COUNTER ========== -->
+            <!-- Top-right corner visit counter with eye icon -->
+             
+            <div class="visit-counter">
+                <!-- Eye icon SVG -->
+                <svg class="eye-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+                        fill="currentColor" />
+                </svg>
+                <!-- Visit counter image from external service -->
+                <!-- CUSTOMIZE: Change the 'page' parameter to your domain -->
+                <span id="visitCounter">0</span></div>
+
+            <!-- ========== PROFILE SECTION ========== -->
+            <!-- Profile picture -->
+            <div class="profile-picture">
+                <!-- CUSTOMIZE: Replace pfp.png with your profile picture -->
+                <img src="pfp.png" alt="Profile Picture">
+            </div>
+
+            <!-- Username/Display name -->
+            <!-- CUSTOMIZE: Change "Roof" to your name -->
+            <h1 class="username">msihek</h1>
+
+            <!-- Animated typewriter description -->
+            <!-- Content controlled by JavaScript typeDescription() function -->
+            <div class="description" id="description"></div>
+
+            <!-- ========== SOCIAL MEDIA ICONS ========== -->
+            <div class="social-icons">
+                <!-- Litecoin address copy button -->
+                <!-- CUSTOMIZE: Change data-address to your Litecoin address -->
+                <button class="social-icon litecoin-copy" title="Copy Litecoin Address"
+                    data-address="LftBG7STaZHoHSWagjCJTYyUjKPE12LBjZ">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="currentColor" />
+                        <path d="M9 7v8h6v-1.5h-4.5V7H9z" fill="white" />
+                        <path d="M7.5 11.5h3v1h-3v-1z" fill="white" />
+                    </svg>
+                </button>
+
+                <!-- YouTube channel link -->
+                <!-- CUSTOMIZE: Change href to your YouTube channel URL -->
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social-icon" title="YouTube"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.8 8.001c0 0-.2-1.4-.8-2-.8-.8-1.6-.8-2-.8-2.8-.2-7-.2-7-.2s-4.2 0-7 .2c-.4 0-1.2 0-2 .8-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.2.8 1.6.2 6.8.2 6.8.2s4.2 0 7-.2c.4 0 1.2 0 2-.8.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 15V9l5.5 3L10 15z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+
+                <!-- Discord username copy button -->
+                <!-- CUSTOMIZE: Change data-username to your Discord username -->
+                <button class="social-icon discord-copy" title="Copy Discord Username" data-username="officialdachv2">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.30zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+            <div class="user-card">
+                <div id="timeContent" title="My current time">
+                    </div>
+                <div id="gmtTime" class="time-text"></div>
+            </div>
+        </div>
+
+        <!-- ========== MUSIC PLAYER ========== -->
+        <div class="music-player">
+            <div class="song-info">
+                <div class="song-title" id="songTitle">Loading...</div>
+            </div>
+
+            <div class="player-controls">
+                <div class="time-display">
+                    <span id="currentTime">00:00</span>
+                </div>
+
+                <div class="control-buttons">
+                    <button class="control-btn" id="prevBtn" title="Previous Song">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6h2v12H6V6zm3.5 6l8.5 6V6l-8.5 6z" fill="currentColor" />
+                        </svg>
+                    </button>
+
+                    <button class="control-btn" id="rewindBtn" title="Rewind 10s">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"
+                                fill="currentColor" />
+                            <text x="12" y="16" text-anchor="middle" font-size="6" fill="currentColor">10</text>
+                        </svg>
+                    </button>
+
+                    <button class="play-pause-btn" id="playPauseBtn">
+                        <div class="pause-icon">
+                            <div class="pause-bar"></div>
+                            <div class="pause-bar"></div>
+                        </div>
+                    </button>
+
+                    <button class="control-btn" id="forwardBtn" title="Forward 10s">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"
+                                fill="currentColor" />
+                            <text x="12" y="16" text-anchor="middle" font-size="6" fill="currentColor">10</text>
+                        </svg>
+                    </button>
+
+                    <button class="control-btn" id="nextBtn" title="Next Song">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="time-display">
+                    <span id="totalTime">--:--</span>
+                </div>
+            </div>
+
+            <!-- Timeline/Progress bar -->
+            <div class="timeline-container">
+                <div class="timeline" id="timeline">
+                    <div class="timeline-progress" id="timelineProgress"></div>
+                    <div class="timeline-handle" id="timelineHandle"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== AUDIO ELEMENT ========== -->
+        <audio id="musicPlayer" preload="metadata">
+            <source src="" type="audio/mpeg">
+        </audio>
+
+        <!-- ========== DISCORD ACTIVITY ========== -->
+        <!-- Real-time Discord status integration -->
+        <div class="discord-activity">
+            <div class="activity-header">
+                <div class="discord-user-info">
+                    <img id="discordAvatar" class="discord-avatar" src="" alt="Discord Avatar" style="display: none;">
+                    <svg class="discord-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.30zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <span class="activity-title">Discord Activity</span>
+                <div class="status-indicator" id="statusIndicator"></div>
+            </div>
+            <div class="activity-content" id="activityContent">
+                <div class="loading">Getting user status...</div>
+            </div>
+        </div>
+
+        <!-- ========== BOTTOM UI ELEMENTS ========== -->
+        <!-- "Made with ❤️ by Fullhook" credit - Bottom left -->
+        <div class="made-by">
+            Made with <span class="heart">❤️</span> by Fullhook<br>
+            Revised with <span class="heart">❤️</span> by <a href="https://squair.xyz" target="_blank">Squair</a>
+        </div>
+
+
+
+        <!-- ========== NOTIFICATION SYSTEM ========== -->
+        <!-- Copy notification popup -->
+        <div id="copyNotification" class="copy-notification">
+            <span id="notificationText">Copied!</span>
+        </div>
+        <div id="background-selector" class="background-option">
+            <div class="background-option" style="justify-content: center;">
+                <button class="control-btn select" id="cycle1" title="Background 1">
+                    1
+                </button>
+                <button class="control-btn select" id="cycle2" title="Background 2">
+                    2
+                </button>
+                <button class="control-btn select" id="cycle3" title="Background 3">
+                    3
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ========== JAVASCRIPT ========== -->
+    <!-- Main functionality script -->
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+

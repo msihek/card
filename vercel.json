@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/jestix",
+      "destination": "https://discord.gg/y5wyG3QN3v",
+      "permanent": true
+    },
+    {
+      "source": "/gunslol",
+      "destination": "https://guns.lol/dach",
+      "permanent": true
+    }
+  ]
+}

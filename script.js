@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function typeDescription() {
         const descriptions = [
             "cmd.exe",
-            "python.py",    // CHANGE THIS: Your second description
+            "Python/Lua developer",    // CHANGE THIS: Your second description
             "NanoLux company"
         ];
 

@@ -202,8 +202,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Comprehensive list of potential MP3 files to test
         const potentialFiles = [
             // Your known files
-            'Noisestorm - Crab Rave.mp3',
-            'PartyTune - Brainrot rap.mp3'
+            'song/Noisestorm - Crab Rave.mp3',
+            'song/PartyTune - Brainrot rap.mp3'
         ];
 
 

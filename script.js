@@ -202,9 +202,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Comprehensive list of potential MP3 files to test
         const potentialFiles = [
             // Your known files
-            'song/Thxsomch - Hate.mp3',
-            'song/emoslut666 - Миниюбка.mp3',
-            'song/iwabi - balkon.mp3'
+            'Noisestorm - Crab Rave.mp3',
+            'PartyTune - Brainrot rap.mp3'
         ];
 
 
